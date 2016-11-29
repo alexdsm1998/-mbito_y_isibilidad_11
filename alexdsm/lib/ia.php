@@ -54,6 +54,12 @@ public $navesIA=[
   public function numNavesHum(){
     return $this->numNavesHum;
   }
+
+  public function imprimirNavesHumanas(){
+    echo while ($navesHumano <= 10) {
+
+    }
+  }
 //SETTERS
 
   public function setMapaCol($mapaCol){
@@ -95,7 +101,8 @@ public $navesIA=[
   }
 
   public function setnumNavesHum($numNavesHum){
-    $this->numNavesHum = $numNavesHum;
+    if($numNavesHum<0 ){
+      $this->numNavesHum = 0;
   }
 //RAMDOM
   public function randompos() {
